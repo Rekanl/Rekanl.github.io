@@ -1,6 +1,30 @@
+#grupperinger {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    border: solid 1px green; 
+    margin: 5px;
+    padding: 10px;
+}
+
 body{
+    
     color: blue;
 }
 div {
     color: red;
+}
+#sistediv{
+    color: green;
+}
+
+
+.lightblue{
+    color: lightblue;
+}
+
+#d1 {color: blue;}
+#d2 {color: red;}
+#d3 {color: silver;}
+img{
+    width: 150px;
 }
