@@ -28,3 +28,9 @@ div {
 img{
     width: 150px;
 }
+
+#media{
+    text-align: center;
+    color: blue;
+    font-size: 2.3rem;
+}
