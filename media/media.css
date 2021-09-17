@@ -39,7 +39,7 @@ div {
     text-align: center;
 }
 #d2 {color: red;}
-#d3 {color: silver;}
+#d3 {color: rgb(143, 40, 40);}
 img{
     width: 150px;
 }
@@ -49,3 +49,25 @@ img{
     color: blue;
     font-size: 2.3rem;
 }
+#grid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 
+    5rem 1fr 2rem;
+    grid-template-areas: 
+         "header header header"
+         "menu main aside"
+         "footer footer footer";
+}
+
+#media{
+    background-color: rgb(47, 209, 196);
+}
+div {
+    background: rgba(175, 182, 221, 0.3) /* blue background with 30% opacity */
+  }
+  article.card{
+      border: solid gray 1px;
+      box-shadow: 2px 2px 2px black;
+      padding: 2; 
+  }
