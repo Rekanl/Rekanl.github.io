@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+    <script src="https://get.mavo.io/mavo.js"></script>
+</head>
+<body>
+    <div mv-app="storageTest" mv-storage="local"style="background-color: [color];"></div>
+        My first Mavo app!
+        <p>Slider value: [strength]/100</p>
+        <br>
+        <input type="range" property="strength" title="[strength]%" />
+        <input type="range" property="hue" max="360" />
+    <input type="range" property="saturation" />
+    <input type="range" property="lightness" />
+
+    <input property="color" readonly
+           value="hsl([hue], [saturation]%, [lightness]%)" />
+    </div>
+</body>
+</html>
