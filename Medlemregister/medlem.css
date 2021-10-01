@@ -18,13 +18,17 @@ header{
 }
 menu{
     grid-area: menu;
+    color: brown;
 }
 main{
     grid-area: main;
+    color: rgb(180, 133, 32);
 }
 aside{
     grid-area: aside;
 }
 footer{
     grid-area: footer;
+    color:rgb(180, 133, 32) ;
 }
+
