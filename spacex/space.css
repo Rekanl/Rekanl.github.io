@@ -1,26 +1,26 @@
-#space{
+#space {
     background-color: black;
     height: 400px;
 }
-#ground{
+#ground {
     position: relative;
-background-color: burlywood;
-height: 150px;
+    background-color: burlywood;
+    height: 150px;
 }
-#platform{
+#platform {
     position: absolute;
     background-color: gray;
     height: 40px;
     width: 40px;
     left: 280px;
-    top: 30px;
+    top:30px;
 }
-#falcon{
-position: absolute;
-left: 300px;
-top: 0;
-width: 10px;
-height: 90px;
-background-color: white;
-border: 1px solid black;
+#falcon {
+    position: absolute;
+    left:0px;
+    top:0;
+    width: 10px;
+    height: 90px;
+    background-color: white;
+    border: 1px solid black;
 }
