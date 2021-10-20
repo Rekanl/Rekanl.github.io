@@ -19,10 +19,14 @@ header{
 menu{
     grid-area: menu;
     color: brown;
+    background-color: rgb(114, 58, 58);
 }
 main{
     grid-area: main;
-    color: rgb(180, 133, 32);
+    color: rgb(43, 38, 27);
+    background-color: brown;
+    position: absolute;right: 33rem;
+
 }
 aside{
     grid-area: aside;
@@ -30,5 +34,9 @@ aside{
 footer{
     grid-area: footer;
     color:rgb(180, 133, 32) ;
+    background-color:brown;
+}
+body{
+    background-color: rgb(235, 169, 47);
 }
 
