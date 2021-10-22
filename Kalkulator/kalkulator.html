@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <main>
+        <div>x = <input type="nuber" name="x"></div>
+        <div>y = <input type="nuber" name="y"></div>
+        <p></p>
+        <section>
+            Velg operasjon
+            <select name="op">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+                </select>
+        </section>
+        <section>
+            <div>x {op} y = {x $op y}</div>
+
+        </section>
+    </main>
+<script type="module">
+    import {updateMyProperties} from "./Minos.js";
+    updateMyProperties();
+    web.op= "+";
+    web.x=1;
+    web.y=1;
+</script>
+</body>
+</html>
