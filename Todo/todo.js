@@ -29,6 +29,3 @@ lagre.onclick = () => {
     visAlleOppgaver();
     lagreDataPermanent();
 }
-
-
-
