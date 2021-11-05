@@ -29,4 +29,18 @@ pizza.onkeyup = (e) => {
     }
 }
 
+const byliste = [
+    {navn:"frakkagjer",},
+    {navn:"haugesund",},
+    {navn:"norheim",},
+    {navn:"åkra",},
+];
 
+by.onkeyup = (e) => {
+    const delnavn = web.by;
+    const treff = byliste.find(p => p.navn.includes(delnavn));
+    if (treff) {
+        web.bynavn = treff.navn;
+        
+    }
+}
