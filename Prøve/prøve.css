@@ -1,0 +1,94 @@
+:root {
+    --header-fg: #F9AE00;
+    --header-bg: #761f18;
+    --main-bg: #FFF1C1;
+    --footer-bg: #FFD974;
+}
+
+body {
+    background-color: var(--footer-bg);
+}
+
+body > div {
+    width:100vw;
+    margin-left:-8px;
+    margin-top:-8px;
+}
+
+.maingrid {
+    display: grid;
+    grid-template-areas: "header" "menu" "main" "footer";
+}
+
+.kolonner3 {
+    display: grid;
+    grid-template-columns: auto minmax(10rem, 30rem) 5rem minmax(10rem, 30rem) auto;
+}
+
+.seek {
+    grid-area: menu;
+    background-color: var(--main-bg);
+    color: var(--header-bg);
+    min-height: 5vh;
+}
+
+.seek div {
+    margin: 5px;
+}
+
+header {
+    position: relative;
+    color: var(--header-fg);
+    background-color: var(--header-bg);
+    height: 185px;
+    grid-area: header;
+}
+
+header img {
+    position: relative;
+    height: 120px;
+    top: 20px;
+    left: 60px;
+}
+
+.pizzavenn {
+    margin: 5px;
+    position: absolute;
+    color: white;
+    right: 60px;
+    top: 120px;
+    transition: 200ms;
+}
+
+.pizzavenn:hover {
+    transform: translate(3px, -2px);
+    font-size: 1.1rem;
+    transition: 500ms;
+}
+
+main {
+    background-color: var(--main-bg);
+    color: var(--header-bg);
+    min-height: 20vh;
+    grid-area: main;
+}
+
+footer {
+    color: var(--header-bg);
+    min-height: 20vh;
+    grid-area: footer;
+    column-width: 12rem;
+    column-gap: 1rem;
+    max-width: 66rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2rem;
+}
+
+footer>div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border: 2px solid rgb(79, 185, 227);
+    padding: 10px;
+    margin: 0 0 1em 0;
+}
