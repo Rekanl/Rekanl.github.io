@@ -1,4 +1,28 @@
 :root {
     --bordfarge:tan;
+    --kvit: white;
+    --ruteDim: calc(600px / 8)
+
+}
+body {
+    background-color: var(--bordfarge) ;
+}
+.rute{
+    background-color: var(--kvit);
+    width: var(--ruteDim);
+    height: var(--ruteDim);
+    border: solid gray;
+}
+.rute.svart{
+        background-color: var(--svart) ;
+}
+.rute.kvit{
+        background-color: var(--kvit) ;
+}
+
+#brett {
+    display: grid;
+    grid-template-columns:repeat(8,1fr) ;
+    width: calc((var(--ruteDim)+ 2px) *8);
 
 }
