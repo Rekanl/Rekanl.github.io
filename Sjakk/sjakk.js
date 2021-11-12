@@ -1,12 +1,12 @@
 // @ts-check
-import { updateMyProperties, thingsWithId, preCalc } from "../lib/Minos.js";
+import { updateMyProperties, thingsWithId,  } from "../lib/Minos.js";
 const web = updateMyProperties ();
 
 const nyttElement = tag => document.createElement (tag);
 
-const  {brett} = thingsWithId
+const  {brett} = thingsWithId()
 
-for (let i=0, i<64; i += 1) {
+for (let i =0; i < 64; i += 1) {
     let t = Math.trunc(i/8);
     const rute= nyttElement ("div");
     brett.append (rute);
@@ -15,6 +15,9 @@ for (let i=0, i<64; i += 1) {
     } else {
         rute.className = "rute svart";
     }
-    rute.innerHTML = i;
+    if (i<8) {
+        class
+    }
 
-}
+
+    rute.innerHTML = i;

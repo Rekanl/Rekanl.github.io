@@ -1,6 +1,7 @@
 :root {
     --bordfarge:tan;
     --kvit: white;
+    --svart: black;
     --ruteDim: calc(600px / 8)
 
 }
@@ -8,16 +9,17 @@ body {
     background-color: var(--bordfarge) ;
 }
 .rute{
+    position: relative;
     background-color: var(--kvit);
     width: var(--ruteDim);
     height: var(--ruteDim);
     border: solid gray;
 }
-.rute.svart{
-        background-color: var(--svart) ;
+.rute.svart {
+        background-color: var(--svart);
 }
-.rute.kvit{
-        background-color: var(--kvit) ;
+.rute.kvit {
+        background-color: var(--kvit);
 }
 
 #brett {
@@ -26,3 +28,23 @@ body {
     width: calc((var(--ruteDim)+ 2px) *8);
 
 }
+.rute.bonde::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 4px;
+    content: "";
+    display: block;
+    background-color: green;
+}
+.rute.bonde::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 4px;
+    content: "";
+    display: block;
+    background-color: green;
+    border-radius: 50%;
