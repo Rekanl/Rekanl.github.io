@@ -1,14 +1,55 @@
 :root {
     --bordfarge:tan;
-    --kvit: white;
-    --svart: black;
-    --ruteDim: calc(600px / 8)
+    --kvit:white;
+    --svart:black;
+    --ruteDim:calc(600px / 8)
+}
 
-}
 body {
-    background-color: var(--bordfarge) ;
+    background-color: var(--bordfarge);
 }
-.:root {
+
+.rute {
+    position: relative;
+    width: var(--ruteDim);
+    height: var(--ruteDim);
+    border: solid gray 1px;
+}
+.rute.svart {
+    background-color: var(--svart);
+}
+.rute.kvit {
+    background-color: var(--kvit);
+}
+
+#brett {
+    width: calc((var(--ruteDim) + 2px) * 8);
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.rute.bonde::before {
+    position: absolute;
+    left: 10px;
+    top:45px;
+    width: 50px;
+    height: 20px;
+    content: "";
+    display: block;
+    background-color: green;
+}
+
+.rute.bonde::after {
+    position: absolute;
+    right: 20px;
+    top:8px;
+    width: 40px;
+    height: 40px;
+    content: "";
+    display: block;
+    background-color: green;
+    border-radius: 50%;
+}:root {
     --bordfarge:tan;
     --kvit:white;
     --svart:black;
@@ -40,10 +81,10 @@ body {
 
 .rute.bonde::before {
     position: absolute;
-    left: 0;
-    top:0;
-    width: 12px;
-    height: 4px;
+    left: 10px;
+    top:45px;
+    width: 50px;
+    height: 20px;
     content: "";
     display: block;
     background-color: green;
@@ -51,10 +92,10 @@ body {
 
 .rute.bonde::after {
     position: absolute;
-    right: 0;
-    top:0;
-    width: 12px;
-    height: 4px;
+    right: 20px;
+    top:8px;
+    width: 40px;
+    height: 40px;
     content: "";
     display: block;
     background-color: green;

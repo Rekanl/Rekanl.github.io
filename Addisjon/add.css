@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    color: white;
+
+}
+
+#rutenett {
+    display: grid;
+    grid-template-columns: repeat (6,1fr);
+}
+
+.rute {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: gray;
+}
+
+section{
+display: grid;
+grid-template-areas: 
+"input alg";
+}
+
+
+#algoritme {
+    grid-area: alg;
+    width:30rem;
+    height: 20rem;
+    background-color:slategray;
+    color: black;
+    opacity: 100;
+    padding: 10px;
+
+}
