@@ -3,6 +3,8 @@ import { updateMyProperties, thingsWithId } from "../lib/Minos.js";
 
 const web = updateMyProperties();
 
+web.pos = 0;
+
 
 const { vis, algoritme, add } = thingsWithId();
 

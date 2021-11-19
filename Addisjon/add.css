@@ -45,7 +45,7 @@ section {
     grid-area: alg;
     width:30rem;
     height: 20rem;
-    background-color: slategrey;
+    background-color: rgb(32, 109, 185);
     opacity: 0;
     padding: 10px;
 }
