@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(113, 236, 185)
+}
+header {
+    font-size: 1.5rem;
+    color:rgb(10, 19, 16);
+    position: relative;
+    left: 450px;
+    height: 10px;
+    top: 10px;
+}
+.maingrid{
+    display: grid;
+    grid-template-columns: "header "menu" "main" "footer";
+}
