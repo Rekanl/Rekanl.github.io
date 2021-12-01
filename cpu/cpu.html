@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cpu</title>
+    <link rel="stylesheet" href="cpu.css">
+</head>
+<body>
+    <div id="adder">
+        <div id="tegning">
+        <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg"><g><g 
+        id="halfadd"><line stroke="#000" y2="32" x2="105" y1="31" x1="73">
+
+        </line><line stroke="#000" y2="57" x2="106" y1="57" x1="41.5">
+
+        </line><line stroke="#000" y2="48" x2="171" y1="48" x1="148"></line>
+        <line stroke="#000" y2="100" x2="120" y1="50" x1="120"></line>
+        <line stroke="#000" y2="0" x2="120" y1="50" x1="120"></line>
+        <rect stroke="#000" height="64" width="50" y="16" x="105" fill="#fff">
+
+        </rect><text font-size="16" y="35" x="110" stroke-width="0">a</text>
+        <text font-size="16" y="60" x="110" stroke-width="0">b</text>
+        <text font-size="16" y="50" x="140" stroke-width="0">s</text>
+        <text font-size="16" y="75" x="115" stroke-width="0">c</text></g>
+        <use href="#halfadd" x="0" y="80"></use></g></svg>
+    
+        </div>
+        <div id="first">
+            <div class="ia">{a?1:0} <input type="checkbox" id="a"></div>
+            <div class="ib">{b?1:0} <input type="checkbox" id="b"></div>
+            <div class="ic"> {c1:=(a&&b)?1:0}</div>
+            <div class="is"> {s1:=a!=b?1:0}</div>
+        </div>
+    </div>
+  
+</body>
+</html>
