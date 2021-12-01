@@ -21,5 +21,17 @@
     top: -155px;
     font-size: 0.8rem;
 }
+.ic {
+    position: absolute;
+    left: 170px;
+    top: -170px;
+    font-size: 0.8rem;
+}
+.is {
+    position: absolute;
+    left: 130px;
+    top: -125px;
+    font-size: 0.8rem;
+}
 
 
