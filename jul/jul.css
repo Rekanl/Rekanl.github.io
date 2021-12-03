@@ -19,7 +19,7 @@ left: 500px;
     color: honeydew;
     }
 
-    .div1 { grid-area: 1 / 1 / 2 / 2;border:solid red ; <img src="1.jpng.jpeg" alt="jul">     } 
+    .div1 { grid-area: 1 / 1 / 2 / 2;border:solid red ; } 
     .div2 { grid-area: 1 / 2 / 2 / 3;border:solid red ; }
     .div3 { grid-area: 1 / 3 / 2 / 4;border:solid red ; }
     .div4 { grid-area: 1 / 4 / 2 / 5;border:solid red ; }
