@@ -2,3 +2,19 @@ body {
     background-color: black;
     color: white;
 }
+h1{
+    position: relative;
+    color: grey;
+    left: 500px;
+}
+#mult {
+    display: grid;
+    grid-template-columns: repeat(10, 3fr);
+    font-size: 25px;
+    border: grey solid 1px;
+  }
+  
+  .luke {
+  width: 7.5rem;
+  border: solid white 1px;
+  }
