@@ -1,0 +1,30 @@
+#stuffToShow {
+    display:none;
+}
+
+#checkbox {
+    opacity:0.01;
+}
+
+#checkbox:checked + #stuffToShow {
+    display:block;
+}
+#retur {
+    font-size: 10px;
+}
+#betale{
+    position: relative;
+    left: 700px;
+    top: -65px;
+
+}
+#faktura{
+    position: relative;
+    left: 700px;
+    top: -30px;
+
+}
+#lutfi{
+    position: relative;
+    left: 500px;
+}
