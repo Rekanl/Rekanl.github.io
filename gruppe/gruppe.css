@@ -1,0 +1,11 @@
+#input{
+    grid-template-rows: 10rem;
+    font-size: 0.9rem;
+    font-family:sans-serif;
+    padding: 20px;
+    grid-template-columns:10px;
+    
+}
+#lag{
+    padding: 20px;
+}
