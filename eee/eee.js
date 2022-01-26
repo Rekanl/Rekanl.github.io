@@ -1,3 +1,4 @@
+
 const alleBrukere = {};
 
 const leggMegTil = (id, navn, etternavn, alder, adresse, tlf) => {
