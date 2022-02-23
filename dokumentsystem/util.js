@@ -47,14 +47,31 @@
 
 
 
- function konflikt (a,b){
-    const [u,v]=a;
-    const[x,y]=b;
-    if(y>x, yx) 
-    return false;
-}
+//  function konflikt (a,b){
+//     const [u,v]=a;
+//     const[x,y]=b;
+//     if(y>x, yx) 
+//     return false;
+// } kommand k c for å gjøre til skrift
+
 
 // console.log(konflikt([100,200], [150,300]))
 // console.log(konflikt([100,200], [300,400]))
 // console.log(konflikt([100,200], [200,300]))
-console.log(konflikt([100,200], [80,500]))
+// console.log(konflikt([100,200], [80,500]))
+
+export function visFiler(liste) {
+    const div = document.createElement("div");
+    let s ='<svg class="liste" viewBox="-2 -2 4 4">';
+
+    for(const f of liste){
+        s = s + '<text>' + f + '</text>'
+    }
+
+    s += '</svg>'
+    div.innerHTML = s;
+    return div;
+}
+
+
+

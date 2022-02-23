@@ -1,15 +1,25 @@
 // @ts-check
 
-import {velgFiler} from "./util.js";
+// import {velgFiler} from "./util.js";
 
-const antall= linjerMedOrd(33text,"ost");
-console.log(antall)
+// const antall= linjerMedOrd(33text,"ost");
+// console.log(antall)
 
-const minefiler = velgFiler("b.pdf c.pdf","doc");
+// const minefiler = velgFiler("b.pdf c.pdf","doc");
 
-import {...,konflikt} from "./util.js"
+// import {...,konflikt} from "./util.js"
 
-// console.log(matsj([1,2][3,4]));
-// console.log(matsj([1,2][1,2]));
-// console.log(matsj([1,2][1,2,3]));
-console.log(konflikt([100,200], [150,300]))
+// // console.log(matsj([1,2][3,4]));
+// // console.log(matsj([1,2][1,2]));
+// // console.log(matsj([1,2][1,2,3]));
+// console.log(konflikt([100,200], [150,300]))
+
+import {visFiler} from "./util.js"
+
+
+const main = () => {
+    const bod = document.querySelector("body");
+    bod.append(visFiler(["hei"]));
+}
+
+export default main;
