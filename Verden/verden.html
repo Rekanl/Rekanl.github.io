@@ -1,0 +1,63 @@
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #disp {
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
+
+    <script src="//unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <div id="disp"></div>
+
+    <script>
+        const { floor } = Math;
+        const initData = {
+            nodes: [
+                { id: "kina", gdp: 1472 },
+                { id: "usa", gdp: 2094 },
+                { id: "japan", gdp: 506 },
+
+            ],
+            links: [
+                { source: "kina", target: "usa", value: 30,curvature: 0.8, rotation: Math.PI * 1 / 6  },
+                { source: "usa", target: "kina", value: 10, curvature: 0.8, rotation: Math.PI * 1 / 4 },
+                { source: "kina", target: "japan", value: 8,curvature: 0.4, rotation: Math.PI * 1 / 3  },
+                { source: "usa", target: "japan", value: 15,curvature: 0.4, rotation: Math.PI * 1 / 2  },
+            ]
+        };
+        const Graph = ForceGraph3D()
+            (document.getElementById('disp'))
+            //.jsonUrl('./filer.json')
+            .graphData(initData)
+            .nodeAutoColorBy(d => floor(Number(d.gdp / 10)))
+            .linkDirectionalParticles("value")
+            .linkCurvature('curvature')
+            .linkCurveRotation('rotation')
+            .linkDirectionalParticleSpeed(d => 0.002)
+            .onNodeClick(node => {
+                alert(node.id);
+            })
+            .nodeThreeObject(node => {
+                const sprite = new SpriteText(node.id);
+                sprite.material.depthWrite = false; // make sprite background transparent
+                sprite.color = node.color;
+                sprite.textHeight = 8;
+                return sprite;
+            });
+
+        // Spread nodes a little wider
+        //Graph.d3Force('charge').strength(-120);
+
+    </script>
+</body>
