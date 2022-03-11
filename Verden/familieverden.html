@@ -21,30 +21,39 @@
     <div id="disp"></div>
 
 
+
     <script>
         const { floor } = Math;
         const initData = {
             nodes: [
-                { id: "kina", gdp: 1472 },
-                { id: "usa", gdp: 2094 },
-                { id: "japan", gdp: 506 },
-
-            ],
+                { id: "audun",      fd:1963 },
+                { id: "sigmund",    fd:1924 },
+                { id: "sigmund jr", fd:1961 },
+                { id: "ida",        fd:1927 },
+                { id: "ola",        fd:1867 },
+                { id: "frank",      fd:1856 },
+                { id: "ada",        fd:1867 },
+                { id: "anna",       fd:1870 },
+                { id: "torger",     fd:1814 },
+        ],
             links: [
-                { source: "kina", target: "usa", value: 30,curvature: 0.8, rotation: Math.PI * 1 / 6  },
-                { source: "usa", target: "kina", value: 10, curvature: 0.8, rotation: Math.PI * 1 / 4 },
-                { source: "kina", target: "japan", value: 8,curvature: 0.4, rotation: Math.PI * 1 / 3  },
-                { source: "usa", target: "japan", value: 15,curvature: 0.4, rotation: Math.PI * 1 / 2  },
+            {source: "audun",       target: "sigmund",    value:1   },
+            {source: "sigmund jr",     target: "sigmund",    value:1   },
+            {source: "sigmund jr",     target: "ida",    value:1   },
+            {source: "sigmund",     target: "ola",         value:1   },
+            {source: "ola",     target: "torger",         value:2   },
+            {source: "audun",   target: "ida",         value:15   },
+            {source: "ida",    target: "frank",        value:4   },
+            {source: "ida",    target: "ada",          value:1   },
+            {source: "sigmund",    target: "anna",          value:1   },
             ]
         };
         const Graph = ForceGraph3D()
             (document.getElementById('disp'))
             //.jsonUrl('./filer.json')
             .graphData(initData)
-            .nodeAutoColorBy(d => floor(Number(d.gdp / 10)))
+            .nodeAutoColorBy(d => floor(Number(d.fd/10)) )
             .linkDirectionalParticles("value")
-            .linkCurvature('curvature')
-            .linkCurveRotation('rotation')
             .linkDirectionalParticleSpeed(d => 0.002)
             .onNodeClick(node => {
                 alert(node.id);
@@ -62,25 +71,3 @@
 
     </script>
 </body>
-
-{
-    "eksport": {
-        "tot": 636,01,
-        "Germany": 12%,
-        "France":11%,
-        "USA": 10%,
-        "Uk":5%,
-        "Spain":5%,
-        "Switzerland":5%,
-    },
-    "import": {
-        "tot": 569.7,
-        "Germany":16%,
-        "France":9%,
-        "China":7%,
-        "Spain":5%,
-        "Netherlands":5%,
-        "Belgium":5%,
-
-    }
-}
