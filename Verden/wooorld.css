@@ -1,0 +1,16 @@
+#top{
+    left: 100px;
+}
+
+#woorld{
+    background-image: url("./kfrf.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    width:9999px;
+    height: 9999px;
+    margin: 25px;
+    display: block;
+    left: 300px;
+    top: 100px;
+
+}
