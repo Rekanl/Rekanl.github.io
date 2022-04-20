@@ -1,4 +1,19 @@
 #editor{
     height: 80%;
     width: 30%;
+    border: solid green 5px ;
+}
+#tegning{
+    width: 60%;
+    height: 80%;
+    background-color: blue;
+    border: red solid 5px;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr;
 }
