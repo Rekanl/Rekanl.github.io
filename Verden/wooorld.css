@@ -1,7 +1,6 @@
 #top{
     left: 100px;
 }
-
 #woorld{
     background-image: url("./kfrf.jpg");
     background-repeat: no-repeat;
@@ -12,5 +11,22 @@
     display: block;
     left: 300px;
     top: 100px;
+
+}
+#Eu{
+position: relative;
+top: 100px;
+right: 500px;
+} 
+#NA{
+
+} 
+#SA{
+
+}
+#AF{
+
+}
+#AS{
 
 }
