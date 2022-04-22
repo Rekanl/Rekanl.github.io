@@ -1,19 +1,81 @@
-#editor{
+#editor {
     height: 80%;
-    width: 30%;
-    border: solid green 5px ;
-}
-#tegning{
-    width: 60%;
-    height: 80%;
-    background-color: blue;
-    border: red solid 5px;
+    width: 100%;
+    border: solid green 1px;
 }
 
-#main{
+#tegning {
+    width: 90%;
+    height: 80%;
+    border: solid blue 1px;
+}
+
+#main {
     width: 100vw;
     height: 100vh;
     display: grid;
-    gap: 1rem;
+    gap:1rem;
     grid-template-columns: 1fr 2fr;
+}
+
+.fugl {
+    background-image: url("eagle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+} 
+.katt {
+    background-image: url("katt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+}
+
+.hund {
+    background-image: url("hund.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+}
+.hus {
+    background-image: url("hus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+}
+
+.mann {
+    background-image: url("mann.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+}
+
+.kvinne {
+    background-image: url("kvinne.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+}
+
+.gutt {
+    background-image: url("gutt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+}
+
+.jente {
+    background-image: url("jenta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
 }
