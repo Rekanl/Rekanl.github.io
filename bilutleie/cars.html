@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="cars.css">
+</head>
+<body>
+    <h1>Cars</h1>
+
+
+    <div id="booking">
+
+    <main>
+        <section class="form bruker">
+            <div><label>Name    <input type="text" id="name"></label></div>
+            <div><label>Adress <input type="text" id="adress"></label></div>
+            <div><label>Phone <input type="text" id="phone"></label></div>
+            <div><label>Email   <input type="text" id="email"></label></div>
+            <div><label>Date of birth <input type="Date" id="Dateofbirth"></label></div>
+            <div><label>Good driving record <input type="checkbox" id="good"></label></div>
+        </section>
+        <section class="form velg">
+            <div><label> Choose car
+                <select name="" id="bord">
+                    <option>Ferrari Enzo</option>
+                    <option>BMW 3-series (E90)</option>
+                    <option>Mercedes Amg GT</option>
+                    <option>Mazda 3</option>
+                    <option>Toyota Yaris</option>
+                    <option>Hyondai I20</option>
+                    <option>Audi A3</option>
+                </select></label></div>
+            <div><label>Pickup location 
+                <select name="" id="Pickup">
+                    <option>Haugesund</option>
+                    <option>Bergen</option>
+                </select></label></div>
+        </section>
+        <section class="DRIVE">
+            <div><button type="button" id="bestill">Bestill</button></div>
+        </section>
+        <section
+        id="bestilling" class="bestilling">
+            Dine valg
+            <p> {navn} {adresse} {epost} </p>
+            <p>{bord} {matrett}</p>
+        </section>
+        
+    </main>
+   
+    <script type="module">
+        import {} from "./cars.js";
+    </script>
+    </div>
+</body>
+</html>
