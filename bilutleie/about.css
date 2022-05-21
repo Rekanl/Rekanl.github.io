@@ -1,0 +1,65 @@
+body{
+    background-color: grey;
+    font-family: 'Montserrat', sans-serif;;
+}
+#about{
+    text-align: center;
+    width: 700px;
+}
+#Aboutus{
+    width: 700px;
+    padding-left: 40px;
+
+}
+#employees{
+    text-align: center;
+    width: 700px;
+}
+
+#employeesn{
+    width: 700px;
+    padding-left: 40px;
+
+}
+#location{
+    text-align: center;
+    width: 700px;
+}
+
+#loctaionn{
+    width: 700px;
+    padding-left: 40px;
+
+}
+
+#vehicles{
+    text-align: center;
+    width: 700px;
+}
+
+
+#vehiclesn{
+    width: 700px;
+    padding-left: 40px;
+}
+#allt{
+    padding: 20px;
+    background-color: white ;
+    width: 800px;
+    height: 700px;
+    position: relative;
+    top: 40px;
+
+}
+
+#rekan{
+    background-image: url(IMG_9596-kopi.jpeg);
+    position: absolute;
+    top: 100px;
+    right: 90px;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+
+}

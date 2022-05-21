@@ -8,49 +8,107 @@
     <link rel="stylesheet" href="cars.css">
 </head>
 <body>
-    <h1>Cars</h1>
 
-
+    <div id="alt">
+        <style>
+              ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover {
+                background-color: #111;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <ul>
+                <li><a class="fefea" href="bilut.html">Lutfi Car Hire</a>              
+              </li>
+              <li><a href="availeb.html">Cars</a></li>
+                <li><a href="cars.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+             
+          </div>
+<div id="book">
+    <h2>Book a car </h2>
+</div>
     <div id="booking">
 
     <main>
         <section class="form bruker">
-            <div><label>Name    <input type="text" id="name"></label></div>
-            <div><label>Adress <input type="text" id="adress"></label></div>
-            <div><label>Phone <input type="text" id="phone"></label></div>
-            <div><label>Email   <input type="text" id="email"></label></div>
-            <div><label>Date of birth <input type="Date" id="Dateofbirth"></label></div>
+            <H4>Please fill ut the following:</H4>
+            <div><label>Name:    <input type="text" id="name"></label></div>
+            <div><label>Adress: <input type="text" id="adress"></label></div>
+            <div><label>Phone: <input type="text" id="phone"></label></div>
+            <div><label>Email:   <input type="text" id="email"></label></div>
+            <div><label>Date of birth: <input type="Date" id="Dateofbirth"></label></div>
             <div><label>Good driving record <input type="checkbox" id="good"></label></div>
         </section>
         <section class="form velg">
             <div><label> Choose car
                 <select name="" id="bord">
                     <option>Ferrari Enzo</option>
-                    <option>BMW 3-series (E90)</option>
+                    <option>BMW 3series</option>
                     <option>Mercedes Amg GT</option>
                     <option>Mazda 3</option>
                     <option>Toyota Yaris</option>
                     <option>Hyondai I20</option>
                     <option>Audi A3</option>
-                    <option>SAAB 9-3 Cabriolet (YS3D) 2.0 i 2000 131Hk</option>
+                    <option>Tesla Model 3</option>
                 </select></label></div>
             <div><label>Pickup location 
-                <select name="" id="Pickup">
+                <select name="" id="pickup">
                     <option>Haugesund</option>
                     <option>Bergen</option>
                 </select></label></div>
+                <div><label>Pickup date<input type="Date" id="pic"></label>
+                
+                </div>
+                <div><label>Drop off date<input type="Date" id="dro"></label>
+                
+                </div>
         </section>
         <section class="DRIVE">
-            <div><button type="button" id="bestill">Bestill</button></div>
+            <div><button type="button" id="bestill">Book</button></div>
         </section>
-        <section
-        id="bestilling" class="bestilling">
-            Dine valg
-            <p> {navn} {adresse} {epost} </p>
-            <p>{bord} {matrett}</p>
-        </section>
+
+        
+        <!-- <section
+            id="bestilling" class="bestilling">
+            Din bestilling
+            <p> {name} {adress} {date of birth} {phone} {email}</p>
+            <p>{phone} {email}</p>
+            <p>{bord} {Pickup}</p>
+            <p>{pic} until {dro}</p>
+        </section> -->
         
     </main>
+    <div id="Bekreftese">
+        <div id="oversskrift">
+             <h2>Booking Confirmation</h2>
+        </div>
+       
+
+    </div>
    
     <script type="module">
         import {} from "./cars.js";

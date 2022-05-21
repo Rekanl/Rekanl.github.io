@@ -1,0 +1,119 @@
+#lutfi{
+    position: absolute;
+    color: white;
+    font-size: smaller;
+    top: 65px;
+    padding: 10px;
+    left: 19px;
+}
+#timeplan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+;
+  }
+  
+  .time {
+  width: 6rem;
+  }
+
+  #enzo{
+      background-image: url(ferrari.png);
+      position: relative;
+      width: 380px;
+      height: 200px;
+      margin: 20px;
+      border: black solid 5px;
+      text-align: center;
+      background-position: center;
+      background-size: cover;
+    
+
+  }
+  #bmw{
+    background-image: url(g10.png);
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    border: black solid 5px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+}
+#amg{
+    background-image: url(gt.png);
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    border: black solid 5px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+}
+#mazda{
+    background-image: url(mazda.png);
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    border: black solid 5px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+}
+#toyota{
+    background-image: url(yarisgr.png);
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    border: black solid 5px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+}
+#hyondai{
+    background-image: url(i20.png);
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    border: black solid 5px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+#audi{
+
+    background-image: url(a3.png);
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    border: black solid 5px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+}
+#tesla{
+    background-image: url(tesla.png);
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    border: black solid 5px;
+    text-align: center;     
+    background-position: center;
+    background-size: cover;
+
+
+}
