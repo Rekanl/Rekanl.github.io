@@ -33,7 +33,7 @@ body{
 }
 
 #vehicles{
-    text-align: center;
+    text-align:center;
     width: 700px;
 }
 
@@ -49,6 +49,9 @@ body{
     height: 700px;
     position: relative;
     top: 40px;
+    box-shadow: 10px 10px 5px 12px rgb(105, 107, 108);
+
+
 
 }
 
@@ -61,5 +64,28 @@ body{
     height: 200px;
     background-position: center;
     background-size: cover;
+    box-shadow: 5px 5px 2px 5px rgb(105, 107, 108);
+    border-radius: 15px;
+        border: solid grey;
+
+ 
+}
+#rekanl{
+    position: absolute;
+    top: 260px;
+    right: 97px;
+
+}
+#lot{
+    background-image: url(lot.jpg);
+    position: absolute;
+    top: 340px;
+    right: 20px;
+    width: 350px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 2px 5px rgb(105, 107, 108);
+    border: solid grey;
 
 }

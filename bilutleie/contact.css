@@ -1,0 +1,63 @@
+body{
+    background-color: grey;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+
+#allt{
+   position: absolute;
+   background-color: white;
+   width: 700px ;
+   height: 300px;
+   top: 100px;
+   left: 60px;
+   padding: 30px;
+   box-shadow: 10px 10px 5px 12px rgb(105, 107, 108);
+}
+#header{
+    text-align: center;
+    font-size: large ;
+
+}
+#reservasjon{
+
+position: absolute;
+top: 120px;
+left: 50px;
+padding: 10px;
+width: 1000px;
+text-align: center;
+
+}
+#resee{
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    padding: 10px;
+    width: 1000px;
+}
+#acident{
+    position: absolute;
+    top: 230px;
+    left: 90px;
+    padding: 10px;   
+     width: 1000px;
+     text-align: center;
+
+}
+#qa{
+    position: absolute;
+   background-color: white;
+   width: 700px ;
+   height: 800px;
+   top: 500px;
+   left: 60px;
+   padding: 30px;
+   box-shadow: 10px 10px 5px 12px rgb(105, 107, 108);
+}
+
+#question{
+    text-align: center;
+    padding: 10px;
+    font-size: large ;
+}
