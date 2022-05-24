@@ -1,7 +1,7 @@
 body{
-    background-color: rgb(234, 234, 232);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: larger;
+background-color: grey;
+font-family: sans-serif;
+font-size: large ;
 ;
 }
 body {
@@ -13,19 +13,21 @@ top: 10px;
 border: solid black;
 background-color: rgb(95, 93, 93);
 width: 79rem;
-
 }
 
 main {
     position: absolute;
-    top: 200px;
+    top: 150px;
+    width: 800px;
+    height: 600px;
     display: grid;
-    background-color: rgb(95, 93, 93);
+    background-color: white;
+    box-shadow:  5px 5px rgb(105, 107, 108);
+    border-radius: 15px;
     grid-template-areas: 
     "bruker bestill"
     "velg   bestilling"
-    
-    
+
 }
 
 section {
@@ -55,18 +57,44 @@ section.bestilling {
 
 
 #Bekreftese{
-    position: absolute;
-    width: 30rem;
-    height: 30rem;
-    border: solid 1px black;
-    top: 155px;
+    position: absolute; 
+    top: 155px;    
     right: 4%;
-    background-color: rgb(95, 93, 93);
- 
+    width: 370px;
+    height: 30rem;
+    text-align: center;
+    border: solid 1px black;
+    background-color: white;
+    box-shadow:  5px 5px rgb(105, 107, 108);
+    border-radius: 15px;
+    font-size: smaller;
+
 }
 #oversskrift{
     position: absolute;
     right: 70px;
     top: -60px;
+
 }
 
+#book{
+    position: absolute;
+    width: 1100px;
+    text-align: center;
+    font-size: larger;
+}
+
+#bestill{
+background-color: grey; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+display: inline-block;
+font-size: large;
+margin: 4px 2px;
+cursor: pointer;
+position: absolute;
+top: 100px;
+left: 600px;
+        }

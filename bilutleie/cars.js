@@ -69,13 +69,13 @@ bestill.addEventListener("click", () => {
         dro.value,
         good.value);
         Bekreftese.innerHTML = `
+        
         <h2>Booking Confirmation</h2>
        
         <H3>Bookingnumber: 4892140</H3>
         <H4>Thanks for the booking! A email containing receipt has been sendt to you.</H4>
 
             <ul>
-            
                 <li>Name: ${name.value}</li>
                 <li>Adress: ${adress.value}</li>
                 <li>Phone: ${phone.value}</li>
@@ -86,7 +86,7 @@ bestill.addEventListener("click", () => {
                 <li>Pickup date: ${pic.value}</li>
                 <li>Drop off date: ${dro.value}</li>
                 <li>Price: ${pris*diff} NOK</li> 
-Bookings can be refuneded 24 hour before Pickup date.
+                Bookings can be refuneded 24 hour before Pickup date.
             </ul>
         `;
 })
