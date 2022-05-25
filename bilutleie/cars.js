@@ -49,6 +49,24 @@ const { bestill, bestilling, bord, pic, dro, name,
     good, Bekreftese } = thingsWithId();
 
 bestill.addEventListener("click", () => {
+    /**
+     * Hvis name.value === "" eller adress.value === "" osv.... eller good.value === "":
+     *  ikke gjør noe (return)
+     */
+
+    if(name.value === ""||
+    adress.value === ""||
+    phone.value === ""||
+    email.value === ""||
+    Dateofbirth.value === ""||
+    bord.value === ""||
+    pickup.value === ""||
+    pic.value === ""||
+    dro.value === ""||
+    good.value === ""){
+alert("You have to fill in form.")
+return
+    }
     // bestilling.style.opacity = 1;
     const pris = cars[bord.value].pricePerDay;
     const diff = new Date(dro.value).getDate() - new Date(pic.value).getDate();

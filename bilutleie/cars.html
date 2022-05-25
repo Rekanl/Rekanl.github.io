@@ -11,19 +11,19 @@
 
     <div id="alt">
         <style>
-              ul {
+              #homeUL {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: #333;
+                background-color: gray;
               }
               
-              li {
+              .homeLI {
                 float: left;
               }
               
-              li a {
+              .homeLI> a {
                 display: block;
                 color: white;
                 text-align: center;
@@ -31,20 +31,20 @@
                 text-decoration: none;
               }
               
-              li a:hover {
+              .homeLI> a:hover {
                 background-color: #111;
               }
               </style>
               </head>
               <body>
               
-              <ul>
-                <li><a class="fefea" href="bilut.html">Lutfi Car Hire</a>              
+              <ul id="homeUL">
+                <li class="homeLI"><a class="fefea" href="bilut.html">Lutfi Car Hire</a>              
               </li>
-              <li><a href="availeb.html">Cars</a></li>
-                <li><a href="cars.html">Booking</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+              <li class="homeLI"><a href="availeb.html">Cars</a></li>
+                <li class="homeLI"><a href="cars.html">Booking</a></li>
+                <li class="homeLI"><a href="contact.html">Contact</a></li>
+                <li class="homeLI"><a href="about.html">About</a></li>
               </ul>
              
           </div>
