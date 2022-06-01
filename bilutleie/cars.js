@@ -36,7 +36,6 @@ const cars = {
     }
 }
 
-
 const web = updateMyProperties();
 
 
@@ -49,11 +48,6 @@ const { bestill, bestilling, bord, pic, dro, name,
     good, Bekreftese } = thingsWithId();
 
 bestill.addEventListener("click", () => {
-    /**
-     * Hvis name.value === "" eller adress.value === "" osv.... eller good.value === "":
-     *  ikke gjør noe (return)
-     */
-
     if(name.value === ""||
     adress.value === ""||
     phone.value === ""||
@@ -65,16 +59,15 @@ bestill.addEventListener("click", () => {
     dro.value === ""||
     good.value === ""){
 alert("You have to fill in form.")
+
 return
     }
-    // bestilling.style.opacity = 1;
     const pris = cars[bord.value].pricePerDay;
     const diff = new Date(dro.value).getDate() - new Date(pic.value).getDate();
     const totalPris = Math.abs(pris*diff);
 
 
     console.log(`Total pris bli ${pris*diff}`);
-
         console.log(
         name.value,
         adress.value,
@@ -94,7 +87,7 @@ return
         <H4>Thanks for the booking! A email containing receipt has been sendt to you.</H4>
 
             <ul>
-                <li>Name: ${name.value}</li>
+                <li>Name: ${lagStorForbokstav(name.value)}</li>
                 <li>Adress: ${adress.value}</li>
                 <li>Phone: ${phone.value}</li>
                 <li>Email: ${email.value}</li>
@@ -108,3 +101,36 @@ return
             </ul>
         `;
 })
+
+/**
+ * 
+ * @param {*} name 
+ * @returns 
+ */
+
+function lagStorForbokstav(name){
+    var ord = name.split (' ');
+    var ord1 = [];
+
+    for(var x = 0; x < ord.length; x++){
+        ord1.push(ord[x].charAt(0).toUpperCase()+ord[x].slice(1));
+    }
+    return ord1.join(' ');
+
+  
+}
+console.log(lagStorForbokstav("")); 
+
+
+
+
+
+
+
+
+
+
+
+//const gange = (1.1)
+//const totalPris = Math.abs(pris*gange);
+//console.log(pris*gange);
